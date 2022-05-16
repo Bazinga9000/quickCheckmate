@@ -4,7 +4,7 @@ A prototype framework for targeted property-based testing, written as a CMSC488B
 
 `stack run` will simply run two tests set up using the framework, followed by a quickCheck test verifying part of the code
 
-The first test checks the property that all integers are at most 20, using the Hill Climbing strategy (take the best scoring test so far and nudge it). Note that this may occasionally fail to produce a failing test case as the default implementation for nudging Integers only shifts them by up to 2 in either direction and may be unlucky enough to reach the goal within 100 cases.
+The first test checks the property that all integers are at most 20, using the Hill Climbing strategy (take the best scoring test so far and nudge it). Note that this may occasionally fail to produce a failing test case as the default implementation for nudging Integers only shifts them by up to 2 in either direction and may be unlucky enough to fail to reach the goal within 100 cases.
 
 The second test checks a property of a very simple tree structure:
 ```
